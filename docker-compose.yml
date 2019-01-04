@@ -3,7 +3,8 @@ services:
   php:
     build: './proj/'
     ports:
-      - "8080:443"
+      - "8080:80"
+      - "8081:443"
     volumes:
       - ./proj/:/var/www/html/
     working_dir: /var/www/html/
