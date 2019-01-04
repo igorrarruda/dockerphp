@@ -1,0 +1,10 @@
+version: "3"
+services:
+  php:
+    build: './proj/'
+    ports:
+      - "8080:80"
+    volumes:
+      - ./proj/:/var/www/html/
+    working_dir: /var/www/html/
+    tty: true
